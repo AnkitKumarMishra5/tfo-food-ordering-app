@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Ankit's Website</title>
+        <link rel="icon" type="image/ico" href="images/Track food onlinelogo.jpg">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            .checked {
+            color: orange;
+            }
+            input[type=submit],input[type=button]
+            {
+            cursor:pointer;
+            border-radius:10px;
+            }
+            .item1
+            {
+            grid-area:display;
+            padding: 2%;
+            width:100%;
+            }
+            .item2
+            {
+            grid-area:body;
+            padding:20px;
+            }
+            .item3
+            {
+            grid-area:head;
+            padding:80px;
+            background-image:url("images/Track Food Online.jpg");
+            background-repeat:no-repeat;
+            background-size:100%;
+            background-position:0%;
+            }
+            .item4
+            {
+            grid-area:foot;
+            padding:20px;
+            }
+            .grid-container     
+            {
+            display:grid;
+            grid-template-areas:
+            'head head head'
+            'display body body'
+            'foot foot foot';
+            }
+        </style>
+        <script>
+            var count=1000;
+            function order()
+            {
+                count++;
+                alert("Your token ID is "+count);
+            }
+        </script>
+    </head>
+    <body bgcolor="antiquewhite" onload="load()">
+        <div class="grid-container">
+        <div class="item3"> </div>
+        <div class="item1"  id="fimg"><img src='images/KulchaChane.jpg' style='border:2px solid black;'></div>
+        <div class="item2">
+            <div name="price" style="float: left;">
+            <span id="fname" style="font-size: 2em; font-family:cursive;">Amritsari Kulcha with Chane</span><br>
+            <span>By</span>&nbsp;<a id="fseller" href="AmritsarFoodHouse.html" style="text-decoration: none; color: mediumblue">Amritsar Food House</a><br>
+            <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            Average Customer Review
+            <hr>
+            Cost:&nbsp;<span id="fcost"><strike>₹ 60</strike></span>&nbsp;<br>
+            <span id="fprice" style="color:#B12704; font-size: 1.5em;">Price: ₹ 50 </span>&nbsp;
+            <span id="ffulfilled"><img src="images/Track food onlinefulfilled.jpg"  width="100px" style="border:2px solid black; position: relative;"></span><br>
+            <span style="font-size: 0.8em;"><b>FREE Delivery </b>option available on orders above ₹300</span><br>
+            <span id="fsave" style="color:#B12704;">You Save:&nbsp;₹ 10&nbsp;(16.66%)</span>&nbsp;&nbsp;
+            Inclusive of all taxes<br>
+            <ul>
+                <li>Pay on Delivery Available</li>
+                <li>Not returnable</li>
+                <li>Collect at Counter option available</li>
+                <li>Delivery option available</li>
+            </ul>
+            <hr>
+            <span style="font-size: 1.2em;">Contents</span>
+            <span id="fcontents"><ul>
+                <li>Kulcha - 2 No.s</li>
+                <li>Chane</li>
+                <li>Raita</li>
+            </ul></span>
+            <span style="font-size: 1.2em;">Collect at Counter Time</span><br><br>
+            Within 15 mins of placing the order
+            <hr>
+            </div>
+            <div name="order" style="float: right;">
+            <form name="f1" action="/order" method="post">
+            <input type="text" name="fname" value="CholeBhature" hidden>
+            <input type="submit" name="orderb" value="Order Now" onclick="order()" style="color: black; background-color: rgb(204, 84, 29); border:1px solid black; font-size:2em; padding:10px 70px; cursor:pointer; float:right; font-family:cursive; border-radius:45%;"><br><br><br><br><br>
+            <input type="button" name="addb" value="Add to Cart" onclick="add()" style="color: black; background-color: rgb(204, 84, 29); border:1px solid black; font-size:2em; padding:10px 70px; cursor:pointer; float:right; font-family:cursive; border-radius:45%;">
+            </form>
+            </div>
+        </div>
+        
+        <div class="foot">
+        <div align="center" style="background-color:aliceblue; width:219.5%;">
+                    <h3>Our Address</h3>
+                    <address>
+		              H.NO.: G5, MRPL Township<br>
+		              Via-Bala, Post-Kuthethoor<br>
+                      Mangalore - 575030<br>
+                      Dakshina Kannada, Karnataka<br>
+                      INDIA<br>
+		              Tel.: +0824 288 5015<br>
+                      Fax: +0824 288 5005<br>
+                      Mob: +91 7795305395 <br>
+		              Email: <a style="color: black;" href="mailto:trackfoodonline@gmail.com">confusion@food.net</a>
+                   </address>
+                   <br>
+        </div>
+        <br>
+        <div align="center" style="width:219.5%;">
+                        <a style="color: black; text-decoration: none" href="http://google.com/+ankitkumarmishra">Google+</a>
+                        <a style="color: black; text-decoration: none" href="http://www.facebook.com/profile.php?id=ankitkumarmishra">Facebook</a>
+                        <a style="color: black; text-decoration: none" href="http://www.linkedin.com/in/ankitkumarmishra">LinkedIn</a>
+                        <a style="color: black; text-decoration: none" href="http://twitter.com/ankitkumarmishra">Twitter</a>
+                        <a style="color: black; text-decoration: none" href="http://youtube.com/decodethecode">YouTube</a>
+                        <a style="color: black; text-decoration: none" href="mailto:trackfoodonline@gmail.com">Mail</a>
+        </div>       
+        <div align="center" style="background-color: aliceblue; width:219.5%;">
+                    <p>© Copyright 2019 Ankit's Website - Track Food Online </p>
+        </div>
+        <div style="width:173%; background-image: url('images/Track food online1.jpg'); background-repeat:no-repeat; background-size:100%; background-position:0%; padding: 160px;">
+                . 
+        </div>
+        </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>Ankit's Website</title>
+        <link rel="icon" type="image/ico" href="images/Track food onlinelogo.jpg">
+
+        <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+        <script type="text/javascript" src="engine1/jquery.js"></script>
+
+        <style>
+            .a{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: gray;
+                font-size: 1.5em;
+            }
+            .b{
+                font-size: 1.5em;
+                width: 75%;
+                background-color: antiquewhite;
+                border-radius:20px;
+                border:2px solid black;
+            }
+            input[type=submit]
+            {
+            cursor:pointer;
+            border-radius:10px;
+            }
+            .item1
+            {
+            grid-area:slider;
+            padding: 2%;
+            }
+            .item2
+            {
+            grid-area:login;
+            padding:20px;
+            }
+            .item3
+            {
+            grid-area:head;
+            padding:80px;
+            background-image:url("images/Track Food Online.jpg");
+            background-repeat:no-repeat;
+            background-size:100%;
+            background-position:0%;
+            }
+            .item4
+            {
+            grid-area:foot;
+            padding:20px;
+            }
+            .grid-container     
+            {
+            display:grid;
+            grid-template-areas:
+            'head  head head'
+            'login slider slider'
+            'foot foot foot';
+            }
+        </style>
+        <script>
+            function register()
+            {
+                x=document.getElementById("2").value
+                var atpos=x.indexOf("@");
+                var dotpos=x.indexOf(".");
+                var dotposLast=x.lastIndexOf(".");
+                if(x==""||atpos<1||dotpos<=atpos+2||dotposLast+2>=x.length)
+                {
+                alert("Please enter a correct E-mail ID");
+                document.getElementById("2").focus();
+                return false;
+                }
+                a=document.getElementById("3").value
+                b=document.getElementById("4").value
+                if(a!=b)
+                {
+                alert("Confirm Password doesn't match with the entered Password");
+                document.getElementById("4").focus();
+                return false;
+                }
+                alert("That's it!\nYou have successfully been registered.\nWelcome to Ankit's Website!\n"+"\"Success isn't easy to achieve in one go!\nNeither is it so difficut to stop yourself from doing the final attempt!\"\n"+"                        - Ankit Kumar Mishra");
+                return(true);
+            }
+            function login()
+            {
+                x=document.getElementById("5").value
+                var atpos=x.indexOf("@");
+                var dotpos=x.indexOf(".");
+                var dotposLast=x.lastIndexOf(".");
+                if(x==""||atpos<1||dotpos<=atpos+2||dotposLast+2>=x.length)
+                {
+                alert("Enter a correct Username");
+                document.getElementById("2").focus();
+                return false;
+                }
+                return(true);
+            }
+        </script>
+    </head>
+    <body bgcolor="black">
+        <div class="grid-container">
+        <div class="item3"> </div>
+        <div class="item1" id="wowslider-container1" align="right">
+            <div class="ws_images"><ul>
+                <li><img src="data1/images/b1.jpg" alt="" title="" id="wows1_0"/></li>
+                <li><img src="data1/images/b2.jpg" alt="" title="" id="wows1_1"/></li>
+                <li><img src="data1/images/b3.jpg" alt="" title="" id="wows1_2"/></li>
+                <li><img src="data1/images/b4.jpg" alt="" title="" id="wows1_3"/></li>
+                <li><img src="data1/images/b5.jpg" alt="" title="" id="wows1_4"/></li>
+                <li><img src="data1/images/b6.jpg" alt="" title="" id="wows1_5"/></li>
+                <li><img src="data1/images/b7.jpg" alt="" title="" id="wows1_6"/></li>
+                <li><img src="data1/images/b8.jpg" alt="" title="" id="wows1_7"/></li>
+                <li><img src="data1/images/b9.jpg" alt="" title="" id="wows1_8"/></li>
+                <li><img src="data1/images/b10.jpg" alt="" title="" id="wows1_9"/></li>
+                <li><a href="http://wowslider.net"><img src="data1/images/b11.jpg" alt="html slideshow" title="" id="wows1_10"/></a></li>
+                <li><img src="data1/images/b12.jpg" alt="" title="" id="wows1_11"/></li>
+            </ul></div>
+            <div class="ws_bullets"><div>
+                <a href="#" title=""><span><img src="data1/tooltips/b1.jpg" alt=""/>1</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b2.jpg" alt=""/>2</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b3.jpg" alt=""/>3</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b4.jpg" alt=""/>4</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b5.jpg" alt=""/>5</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b6.jpg" alt=""/>6</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b7.jpg" alt=""/>7</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b8.jpg" alt=""/>8</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b9.jpg" alt=""/>9</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b10.jpg" alt=""/>10</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b11.jpg" alt=""/>11</span></a>
+                <a href="#" title=""><span><img src="data1/tooltips/b12.jpg" alt=""/>12</span></a>
+            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap slideshow</a> by WOWSlider.com v8.8</div>
+            <div class="ws_shadow"></div>
+        </div>	
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <div class="item2">
+        <div align="center" name="div1" style="box-sizing: border-box; border: 5px solid white; border-radius: 25px 0px 0px 25px; height: 70%; width:50%; float: left; padding:10px 20px 0px 20px; padding-left: 0px; position: relative;">
+            <form name="f1" action='/homepagereg' method="post" onsubmit="return(register())">
+            <span class="a">NAME</span><br>
+            <input type="text" name="name" id="1" width="100%" class="b" required><br>
+            <span class="a">E-MAIL (USERNAME)</span><br>
+            <input type="text" name="email" id="2" width="100%" class="b" required><br>
+            <span class="a">PASSWORD</span><br>
+            <input type="password" name="password" id="3" width="100%" class="b" required><br>
+            <span class="a">CONFIRM PASSWORD</span><br>
+            <input type="password" name="cpassword" id="4" width="100%" class="b" required><br><br>
+            <input type="submit" name="regb" value="Register" style="color: black; background-color: mediumseagreen; border:none; font-size:1.2em;">
+            </form>
+        </div>
+        <div align="center" name="div2" style="box-sizing: border-box; height:70%; border: 5px solid white; border-radius: 0px 25px 25px 0px; width:50%; float: left; padding: 10px 0px 67.5px 0px; margin-left: -5px; position: relative;">
+            <br><span style="color: antiquewhite;">Already a Member?</span><br><br>
+            <form name="f2" action='/homepagelog' method="post" onsubmit="return(login())">
+            <span class="a">USERNAME/E-MAIL</span><br>
+            <input type="text" id="5" name="email2" width="100%" class="b" required><br>
+            <span class="a">PASSWORD</span><br>
+            <input type="password" id="6" name="password2" width="100%" class="b" required><br><br>
+            <input type="submit" name="loginb" value="Log In" style="color: black; background-color: mediumseagreen; border:none; font-size:1.2em;">&nbsp;&nbsp;
+            <span style="color:dodgerblue">Forgot Password?</span>
+            </form> 
+        </div>
+        </div>
+        
+        <div class="foot">
+        <div align="center" style="background-color:aliceblue; width:206%;">
+                    <h3>Our Address</h3>
+                    <address>
+		              H.NO.: G5, MRPL Township<br>
+		              Via-Bala, Post-Kuthethoor<br>
+                      Mangalore - 575030<br>
+                      Dakshina Kannada, Karnataka<br>
+                      INDIA<br>
+		              Tel.: +0824 288 5015<br>
+                      Fax: +0824 288 5005<br>
+                      Mob: +91 7795305395 <br>
+		              Email: <a style="color: black;" href="mailto:trackfoodonline@gmail.com">confusion@food.net</a>
+                   </address>
+                   <br>
+        </div>
+        <br>
+        <div align="center" style="width:206%;">
+                        <a style="color: white; text-decoration: none" href="http://google.com/+ankitkumarmishra">Google+</a>
+                        <a style="color: white; text-decoration: none" href="http://www.facebook.com/profile.php?id=ankitkumarmishra">Facebook</a>
+                        <a style="color: white; text-decoration: none" href="http://www.linkedin.com/in/ankitkumarmishra">LinkedIn</a>
+                        <a style="color: white; text-decoration: none" href="http://twitter.com/ankitkumarmishra">Twitter</a>
+                        <a style="color: white; text-decoration: none" href="http://youtube.com/decodethecode">YouTube</a>
+                        <a style="color: white; text-decoration: none" href="mailto:trackfoodonline@gmail.com">Mail</a>
+        </div>       
+        <div align="center" style="background-color: aliceblue; width:206%;">
+                    <p>© Copyright 2019 Ankit's Website - Track Food Online </p>
+        </div>
+        <div style="width:162.5%; background-image: url('images/Track food online1.jpg'); background-repeat:no-repeat; background-size:100%; background-position:0%; padding: 160px;">
+                . 
+        </div>
+        </div>
+
+        </div>
+    </body>
+</html>
