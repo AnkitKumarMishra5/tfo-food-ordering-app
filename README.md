@@ -1,4 +1,4 @@
-Front-End Project for INT219
+Front-End Project for INT219 , End term project
 
 Group Members:
 - Ankit Kumar (11707969)
